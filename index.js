@@ -17,7 +17,7 @@ const posts = [
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
-        {
+    {
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
@@ -25,6 +25,15 @@ const posts = [
         post: "images/post-ducreux.jpg",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
+    },
+    {
+        name: "Amadeus Mozart",
+        username: "am666",
+        location: "Vien, Austria",
+        avatar: "images/avatar-mozart.jpg",
+        post: "images/post-mozart.jpg",
+        comment: "i am very happy today, yolo!",
+        likes: 639
     }
 ]
 
