@@ -1,5 +1,78 @@
 html, body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    font-family: "Source Sans 3", serif;
+    font-size: 13px;
 }
+
+header {
+    border-bottom: 2px solid #C6C6C6;
+}
+
+body {
+    width: 375px;
+    /* border: 1px solid black; */
+}
+
+p {
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.logo-img {
+    width: 127px;
+}
+
+.user-info {
+    display: flex;
+    align-items: start;
+    padding: 10px 7px;
+}
+
+.avatar-img {
+    width: 34px;
+    border-radius: 50%;
+}
+
+.user-info .avatar-img {
+    padding-right: 5px;
+}
+
+.post-img {
+    width: 100%;
+}
+
+.icons img {
+    width: 25px;
+    padding-right: 20px;
+}
+
+.icons img:hover {
+    opacity: 50%;
+}
+
+.bold-text {
+    font-weight: 900;
+}
+
+.body-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+.body-post p {
+    margin-top: 12px;
+}
+
+
+
 
