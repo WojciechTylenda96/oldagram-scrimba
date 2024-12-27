@@ -28,3 +28,32 @@ const posts = [
     }
 ]
 
+const postsPage = document.getElementById("posts")
+
+function generatePosts() {
+    for(i = 0; i < posts.length; i++) {
+        postsPage.innerHTML += `
+        <section>
+            <div class="user-info">
+                <img class="avatar-img" src="${posts[i].avatar}" alt="">
+                <div class="row">
+                            <p class="bold-text">${posts[i].name}</p>
+                            <p>${posts[i].location}</p>
+                </div>
+            </div>
+            <img class="post-img" src="${posts[i].post}" alt="">
+                <div class="body-post">
+                    <div class="icons">
+                        <img src="images/icon-heart.png" alt="">
+                        <img src="images/icon-comment.png" alt="">
+                        <img src="images/icon-dm.png" alt="">
+                    </div>
+                    <p class="bold-text">${posts[i].likes} likes</p>
+                    <p><span class="bold-text">${posts[i].username}</span> ${posts[i].comment}</p>
+                </div>
+        </section> `
+    }
+} 
+
+generatePosts()
+
