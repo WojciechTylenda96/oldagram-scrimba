@@ -29,6 +29,7 @@ const posts = [
 ]
 
 const postsPage = document.getElementById("posts")
+const likeBtn = document.getElementById("like")
 
 function generatePosts() {
     for(i = 0; i < posts.length; i++) {
@@ -44,7 +45,7 @@ function generatePosts() {
             <img class="post-img" src="${posts[i].post}" alt="">
                 <div class="body-post">
                     <div class="icons">
-                        <img src="images/icon-heart.png" alt="">
+                        <img id="like-btn" src="images/icon-heart.png" alt="">
                         <img src="images/icon-comment.png" alt="">
                         <img src="images/icon-dm.png" alt="">
                     </div>
