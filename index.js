@@ -51,10 +51,10 @@ function generatePosts() {
                             <p>${posts[i].location}</p>
                 </div>
             </div>
-            <img class="post-img" src="${posts[i].post}" alt="">
+            <img class="post-img" ondblclick="addLike(${i})" src="${posts[i].post}" alt="">
                 <div class="body-post">
                     <div class="icons">
-                        <img id="like-btn" src="images/icon-heart.png" alt="">
+                        <img id="like-btn" onclick="addLike(${i})" src="images/icon-heart.png" alt="">
                         <img src="images/icon-comment.png" alt="">
                         <img src="images/icon-dm.png" alt="">
                     </div>
@@ -67,3 +67,8 @@ function generatePosts() {
 
 generatePosts()
 
+function addLike(arg){
+    posts[arg].likes++
+    postsPage.innerHTML = ""
+    generatePosts()
+}
